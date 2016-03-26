@@ -5,8 +5,8 @@ import scala.collection.mutable.ArrayBuffer
   */
 object ScalaApp {
   def main(args: Array[String]): Unit = {
-    val allMod3 = findAllMod3(100)
-    val allMod5 = findAllMod5(100)
+    val allMod3 = findAllMod3(1000)
+    val allMod5 = findAllMod5(1000)
     val sum = sumArrays(allMod3, allMod5)
     println(sum)
   }
