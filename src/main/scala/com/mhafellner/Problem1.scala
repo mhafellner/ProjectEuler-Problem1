@@ -1,9 +1,11 @@
+package com.mhafellner
+
 import scala.collection.mutable.ArrayBuffer
 
 /**
-  * Created by Markus on 25/03/2016.
+  * Created by Markus on 27/03/2016.
   */
-object ScalaApp {
+object Problem1 {
   def main(args: Array[String]): Unit = {
     val allMod3 = findAllMod3(1000)
     val allMod5 = findAllMod5(1000)
