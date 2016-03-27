@@ -1,4 +1,4 @@
-package com.mhafellner
+package com.mhafellner.ProjectEuler
 
 import scala.collection.mutable.ArrayBuffer
 
