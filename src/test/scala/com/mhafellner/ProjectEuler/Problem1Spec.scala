@@ -8,6 +8,10 @@ import org.scalatest._
 class Problem1Spec extends FlatSpec with Matchers {
   behavior of "Problem1"
 
+  "main" should "print out the result" in {
+    Problem1.main(Array[String]()) should be()
+  }
+
   "findAllMod3" should "return an Array[Int]" in {
     Problem1.findAllMod3(0) should be(Array[Int]())
   }
@@ -16,12 +20,20 @@ class Problem1Spec extends FlatSpec with Matchers {
     Problem1.findAllMod3(10) should be(Array[Int](3, 6, 9))
   }
 
+  "findAllMod3 with limit < 0" should "return []" in {
+    Problem1.findAllMod3(-1) should be(Array[Int]())
+  }
+
   "findAllMod5" should "return an Array[Int]" in {
     Problem1.findAllMod5(0) should be(Array[Int]())
   }
 
   "findAllMod5 with limit 20" should "return [5,10,15]" in {
     Problem1.findAllMod5(20) should be(Array[Int](5, 10, 15))
+  }
+
+  "findAllMod5 with limit < 0" should "return []" in {
+    Problem1.findAllMod5(-5) should be(Array[Int]())
   }
 
   "sumArrays" should "return Int" in {
